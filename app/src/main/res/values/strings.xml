@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">WataTesting</string>
+    <string name="txt_login">Login</string>
+    <string name="hint_your_user_name">Your username</string>
+    <string name="hint_your_password">Your password</string>
+    <string name="txt_sign_in">Sign in</string>
+    <string name="txt_keyword_msg_error">Oops! Something\'s wrong. please try again!</string>
+    <string name="txt_user_password_invalid">Username or password invalid. Please check it again!</string>
+    <string name="txt_user_invalid">Username can\'t empty</string>
+    <string name="txt_password_invalid">Password can\'t empty</string>
+    <string name="txt_age">%s years old</string>
+</resources>

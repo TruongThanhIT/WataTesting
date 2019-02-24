@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding"
+    tools:context=".login.MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/ic_login"
+        android:layout_height="@dimen/ic_login"
+        android:src="@drawable/ic_login_email"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/ivEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/edtUserName"
+        app:layout_constraintTop_toTopOf="@+id/edtUserName" />
+
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edtUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/hint_your_user_name"
+        android:imeOptions="actionNext"
+        android:inputType="textAutoComplete"
+        android:padding="@dimen/default_padding"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivEmail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPassword"
+        android:layout_width="@dimen/ic_login"
+        android:layout_height="@dimen/ic_login"
+        android:src="@drawable/ic_login_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtPassword"
+        app:layout_constraintEnd_toStartOf="@+id/edtPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPassword" />
+
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:hint="@string/hint_your_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/default_padding"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_title"
+        app:layout_constraintStart_toStartOf="@+id/edtUserName"
+        app:layout_constraintEnd_toEndOf="@+id/edtUserName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
+
+    <TextView
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_gray"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="@string/txt_sign_in"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/txt_keyword_msg_error"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="@dimen/ic_loading"
+        android:layout_height="@dimen/ic_loading"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

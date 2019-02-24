@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_login">Đăng nhập</string>
+    <string name="hint_your_user_name">Tên đăng nhập của bạn</string>
+    <string name="hint_your_password">Mật khẩu của bạn</string>
+    <string name="txt_sign_in">Đăng nhập</string>
+    <string name="txt_keyword_msg_error">Lỗi trong quá trình tải dữ liệu. Vui lòng thử lại!</string>
+    <string name="txt_user_password_invalid">Tên đăng nhập hoặc mật khẩu không hợp lệ. Vui lòng thử lại!</string>
+    <string name="txt_user_invalid">Tên đăng nhập không thể để trống</string>
+    <string name="txt_password_invalid">Mật khẩu không thể để trống</string>
+    <string name="txt_age">%s tuổi</string>
+
+</resources>

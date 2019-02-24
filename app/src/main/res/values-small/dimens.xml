@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ic_login">9dp</dimen>
+    <dimen name="default_padding">2dp</dimen>
+    <dimen name="ic_loading">14dp</dimen>
+    <dimen name="item_offset8">2dp</dimen>
+    <dimen name="item_offset10">4dp</dimen>
+    <dimen name="item_offset20">14dp</dimen>
+    <dimen name="item_offset90">84dp</dimen>
+
+    <dimen name="text_size_title">8sp</dimen>
+</resources>
